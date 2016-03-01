@@ -1,3 +1,6 @@
+      var IndexBuy = document.querySelectorAll(".buy");
+      var popupIndexBuy = document.querySelector(".write-us-buy");
+
       var linkIndex = document.querySelector(".btn-email");
       var popupIndex = document.querySelector(".write-us");
       var close = document.querySelectorAll(".modal-content-close");
@@ -18,6 +21,19 @@
       var firstSlide = tabSlides.item(0);
       var secondSlide = tabSlides.item(1);
       var thirdSlide = tabSlides.item(2);
+
+      for (var i = 0; i < IndexBuy.length; i++) {
+      IndexBuy[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        popupIndexBuy.classList.add("write-us-show");
+      });
+      };
+      for (var i = 0; i < close.length; i++) {
+      close[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        popupIndexBuy.classList.remove("write-us-show");
+      })
+      };
 
       linkIndex.addEventListener("click", function (event) {
         event.preventDefault();

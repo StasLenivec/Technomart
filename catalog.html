@@ -140,7 +140,7 @@
               <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по функционалу</a></li>
-              <li class="up-dir"><a href="#"><i class="icon-up-dir"></i></a></li>
+              <li class="up-dir active-dir"><a href="#"><i class="icon-up-dir"></i></a></li>
               <li class="down-dir"><a href="#"><i class="icon-down-dir"></i></a></li>
             </ul>
           </div>
@@ -313,21 +313,6 @@
         <a class="btn cancel-btn" href="#">продолжить покупки</a>
       </div>
     </div>
-    <script>
-      var link = document.querySelectorAll(".buy");
-      var popup = document.querySelector(".write-us");
-      var close = document.querySelector(".modal-content-close");
-
-      for (var i = 0; i < link.length; i++) {
-      link[i].addEventListener('click', function (event) {
-        event.preventDefault();
-        popup.classList.add("write-us-show");
-      });
-      }
-        close.addEventListener('click', function (event) {
-        event.preventDefault();
-        popup.classList.remove("write-us-show");
-      });
-    </script>
+    <script src="script/scriptCatalog.js"></script>
   </body>
 </html>

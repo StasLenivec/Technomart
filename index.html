@@ -70,34 +70,35 @@
             <h2>Техника</h2>
             <a class="btn btn-customer-info" href="#">Для стройки</a>
           </div>
-          <div class="gallery clearfix">
-            <button class="gallery-prev">
+          <div class="gallery">
+            <input class="radio-slider1" type="radio" id="btn-1" name="toggle" checked>
+            <input class="radio-slider2" type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <label class="gallery-prev" for="btn-1">
               <i class="icon-left"></i>
-            </button>
-            <button class="gallery-next">
+            </label>
+            <label class="gallery-next" for="btn-2">
               <i class="icon-right"></i>
-            </button>
-            <figure class="gallery-content slider">
-              <div class="promo-slide promo-slide-1 promo-slide-active">
+            </label>
+            <figure class="gallery-content">
+              <div class="promo-slide">
                 <div class="promo-slide-title">
                   <h3>перфораторы</h3>
                   <h4>Настроящие мужские игрушки</h4>
                 </div>
-                <img src="img/galari_1.jpg" alt="">
+                <img src="img/galari_1.jpg" width="620" height="270" alt="">
+                <a class="btn btn-catalog" href="#">открыть каталог</a>
               </div>
               <div class="promo-slide promo-slide-2">
                 <div class="promo-slide-title">
-                  <h3>перфораторы</h3>
-                  <h4>Настоящие мужские игрушки</h4>
+                  <h3>дрели</h3>
+                  <h4>Соседям на радость!</h4>
                 </div>
-                <img src="img/galari_2.jpg" alt="">
-              </div>
-              <a class="btn btn-catalog" href="#">открыть каталог</a>
-              <div class="switcher">
-                <input type="radio" class="radio-slider" id="radio-1" name="radio" checked="checked" />
-                <label for="radio-1"></label>
-                <input type="radio" class="radio-slider" id="radio-2" name="radio" />
-                <label for="radio-2"></label>
+                <img src="img/galari_2.jpg" width="620" height="270" alt="">
+                <a class="btn btn-catalog" href="#">открыть каталог</a>
               </div>
             </figure>
           </div>
@@ -116,7 +117,7 @@
               <a class="btn btn-product" href="#">Все популярные товары</a>
             </header>
             <div class="catalog-items-index">
-              <article class="catalog-item">
+              <article class="catalog-item-index">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
                   <a class="bookmark" href="#">В закладки</a>
@@ -126,7 +127,7 @@
                 <div class="discount">32 500 Р.</div>
                 <div class="price">25 500 Р.</div>
               </article>
-              <article class="catalog-item">
+              <article class="catalog-item-index">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -136,7 +137,7 @@
                 <div class="discount">22 500 Р.</div>
                 <div class="price">15 500 Р.</div>
               </article>
-              <article class="catalog-item">
+              <article class="catalog-item-index">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -146,7 +147,7 @@
                 <div class="discount">30 500 Р.</div>
                 <div class="price">25 500 Р.</div>
               </article>
-              <article class="catalog-item new2">
+              <article class="catalog-item-index new2">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -299,6 +300,17 @@
         </div>
       </div>
     </footer>
+    <div class="pop-up write-us-buy write-us-catalog">
+      <div class="main-block">
+        <div class="modal-content-close">закрыть</div>
+      </div>
+      <div class="main-block-basket"></div>
+      <p class="main-block-text">Товар добавлен в корзину!</p>
+      <div class="control-block clearfix">
+        <a class="btn send-btn" href="#">офрмить заказ</a>
+        <a class="btn cancel-btn" href="#">продолжить покупки</a>
+      </div>
+    </div>
     <div class="pop-up write-us">
       <div class="main-block">
         <button class="modal-content-close">закрыть</button>
