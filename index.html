@@ -71,18 +71,18 @@
             <a class="btn btn-customer-info" href="#">Для стройки</a>
           </div>
           <div class="gallery">
-            <input class="radio-slider1" type="radio" id="btn-1" name="toggle" checked>
+            <input class="radio-slider1" type="radio" id="btn-1" name="toggle" checked="checked">
             <input class="radio-slider2" type="radio" id="btn-2" name="toggle">
             <div class="slider-controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
             </div>
-            <label class="gallery-prev" for="btn-1">
+            <button class="gallery-prev">
               <i class="icon-left"></i>
-            </label>
-            <label class="gallery-next" for="btn-2">
+            </button>
+            <button class="gallery-next">
               <i class="icon-right"></i>
-            </label>
+            </button>
             <figure class="gallery-content">
               <div class="promo-slide">
                 <div class="promo-slide-title">
@@ -168,9 +168,9 @@
                 <a href="#" class="producer-item makita"><img width="220" height="145" src="img/Makita.jpg" alt="Логотип Makite"></a>
                 <a href="#" class="producer-item dewalt"><img width="220" height="145" src="img/dewalt.jpg" alt="Логотип DeWALT"></a>
                 <a href="#" class="producer-item interskol"><img width="220" height="145" src="img/interscol.jpg" alt="Логотип Интерскол"></a>
-                <a href="#" class="producer-item hitachi"><img  width="220" height="145"src="img/hitachi.jpg" alt="Логотип Hitachi"></a>
+                <a href="#" class="producer-item hitachi"><img  width="220" height="145" src="img/hitachi.jpg" alt="Логотип Hitachi"></a>
                 <a href="#" class="producer-item lg"><img width="220" height="145" src="img/LG.jpg" alt="Логотип LG"></a>
-                <a href="#" class="producer-item aeg"><img width="220" height="145" src="img/AEG.jpg" width="220" height="145" alt="Логотип AEG"></a>
+                <a href="#" class="producer-item aeg"><img width="220" height="145" src="img/AEG.jpg" alt="Логотип AEG"></a>
                 <a href="#" class="producer-item metabo"><img width="220" height="145" src="img/Metabo.jpg" alt="Логотип Metabo"></a>
               </div>
           </div>
@@ -195,14 +195,8 @@
                 <dd class="tab-slide tab-first active-tab-slide">
                   <h3 class="tab-slide-title">доставка</h3>
                   <div class="tab-slide-text">
-                    <p class="tab-slide-text-1">
-                     Мы с удовольствием доставим ваш товар прямо
-                     к вашему подъезду совершенно бесплатно!
-                    <p class="tab-slide-text-2">
-                       Ведь мы неплохо зарабатываем,
-                       поднимая его на ваш этаж!
-                    </p>
-                    </p>
+                    <p class="tab-slide-text-1"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                    <p class="tab-slide-text-2"> Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p> 
                   </div>
                 </dd>
                 <dd class="tab-slide tab-second">
@@ -247,7 +241,7 @@
             <h3>Контакты</h3>
             <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
             <a class="map" href="#">
-              <img src="img/map.jpg" width="300" height="160">
+              <img src="img/map.jpg" width="300" height="160" alt="Карта">
             </a>
             <a href="#" class="btn btn-email">заблудились? напишите нам!</a>
           </div>
@@ -318,7 +312,7 @@
             <fieldset>
               <div class="col-1-2">
                 <label for="your-name">Ваше имя:</label>
-                <input class="your-name" type="text" id="your-name  " placeholder="Представьтесь, пожалуйста" required>
+                <input class="your-name" type="text" id="your-name" placeholder="Представьтесь, пожалуйста" required>
               </div>
               <div class="col-1-2">
                 <label for="your-email">Ваш e-mail:</label>
@@ -327,7 +321,7 @@
             </fieldset>
             <fieldset>
               <label for="e-mail">Текст письма:</label>
-              <textarea class="e-mail" id="e-mail" placeholder="В   свободной форме" required></textarea>
+              <textarea class="e-mail" id="e-mail" placeholder="В свободной форме" required></textarea>
             </fieldset>
           </form>
         </div>
