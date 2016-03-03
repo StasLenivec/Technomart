@@ -812,7 +812,6 @@ input:checked ~ label > .icon-check-off:before{
 .promo-slide{
   display: none
 }
-
 #btn-1:checked ~ .gallery-content .promo-slide:nth-child(1){
   display: block
 }
@@ -820,7 +819,7 @@ input:checked ~ label > .icon-check-off:before{
   display: block
 }
 .catalog{
-  margin-bottom:85px;
+  margin-bottom: 85px;
 }
 .popular-producer,
 .popular-product{
