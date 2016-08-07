@@ -713,13 +713,14 @@ input:checked ~ label > .icon-check-off:before{
 }
 .slider-controls{
   position: absolute;
-  bottom: 17px;
-  left: 50%;
-  margin-left: -15px;
+  bottom: 0;
+  left: 48%;
+  text-align: center;
   z-index: 100;
 }
 .gallery input[type="radio"]{
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 .slider-controls label{
   display: inline-block;
@@ -738,7 +739,7 @@ input:checked ~ label > .icon-check-off:before{
 }
 .gallery-prev{
   position: absolute;
-  bottom: 148px;
+  top: 142px;
   left: 5px;
   padding: 0;
   height: 0;
@@ -746,7 +747,7 @@ input:checked ~ label > .icon-check-off:before{
 }
 .gallery-next{
   position: absolute;
-  bottom: 148px;
+  top: 142px;
   right: 0;
   padding: 0;
   height: 0;
@@ -774,7 +775,7 @@ input:checked ~ label > .icon-check-off:before{
 }
 .btn-catalog{
   position: absolute;
-  bottom: 16px;
+  bottom: 17px;
   left: 25px;
   padding: 7px 47px;
   font-weight: 100;
@@ -790,16 +791,22 @@ input:checked ~ label > .icon-check-off:before{
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
   width: 100%;
-  padding: 30px 0 20px 25px;
+  height: 100px;/*Переделать Padding top bottom*/
 }
 .promo-slide h3{
+  display: inline-block;/**/
   margin: 0;
-  margin-bottom: 7px;
+  margin-top: 28px;
+  margin-left: 27px;
   font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 100;
   color: white;
 }
 .promo-slide h4{
+  display: block;/**/
   margin: 0;
+  margin-left: 25px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 100;
@@ -810,16 +817,17 @@ input:checked ~ label > .icon-check-off:before{
   height: 260px;
 }
 .promo-slide{
-  display: none
+  display: none;
 }
+
 #btn-1:checked ~ .gallery-content .promo-slide:nth-child(1){
-  display: block
+  display: block;
 }
 #btn-2:checked ~ .gallery-content .promo-slide:nth-child(2){
-  display: block
+  display: block;
 }
 .catalog{
-  margin-bottom: 85px;
+  margin-bottom:85px;
 }
 .popular-producer,
 .popular-product{
@@ -1255,7 +1263,7 @@ article img{
   z-index: 1;
   width: 468px;
   height: 261px;
-  background-image: url("../img/guaranty.png");
+  background-image: url("../img/Layer 130.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1267,7 +1275,7 @@ article img{
   z-index: 1;
   width: 468px;
   height: 261px;
-  background-image: url("../img/credit.png");
+  background-image: url("../img/Layer 119.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
